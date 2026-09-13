@@ -3,18 +3,23 @@
 Thanks for your interest! This document covers everything you need to get a
 change from your editor into `main`.
 
-## Where to start
-
-- New to the project? Start with the [good first issue](https://github.com/vyncint/temlens/labels/good%20first%20issue)label.
-- Draft PRs are welcome early - opening one can help confirm direction before you do too much work.
-- Two things that commonly trip contributors up: use `git commit -s` for the DCO , and review snapshot changes with `cargo insta review` rather than blindly accepting them.
-
 > **These four projects share one contributor pattern** — the same commit
 > rules, the same DCO, the same AI policy, the same CI and release shape:
 > [termlens](https://github.com/vyncint/termlens),
 > [mossaic](https://github.com/vyncint/mossaic),
 > [launchbound](https://github.com/vyncint/launchbound),
 > [reconverge](https://github.com/vyncint/reconverge). Learn it once.
+
+## Where to start
+
+- New here? The [`good first issue`](https://github.com/vyncint/termlens/labels/good%20first%20issue)
+  label collects work sized for a first patch: one file, no architecture
+  decisions.
+- Open a draft PR early — it is the cheapest way to confirm direction before
+  you write much.
+- Two things trip people up here: commits need `git commit -s` for the
+  [DCO](#5-developer-certificate-of-origin-dco), and snapshot updates are
+  reviewed with `cargo insta review`, never blind-accepted.
 
 ## 1. Dev setup
 
