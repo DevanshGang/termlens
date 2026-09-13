@@ -347,7 +347,7 @@ Other agents take the same file — a Cursor rule, or a reference from
 ## Contributing
 
 Pull requests are welcome — [CONTRIBUTING.md](https://github.com/vyncint/termlens/blob/main/CONTRIBUTING.md) has the dev
-setup, the testing policy and the DCO sign-off. Three things to know before
+setup, the testing policy and the DCO sign-off.**Start with the [Where to start](CONTRIBUTING.md#where-to-start)section.** Three things to know before
 starting: every change lands with tests; anything touching wait semantics
 must pass the 100-iteration [stress workflow](https://github.com/vyncint/termlens/blob/main/.github/workflows/stress.yml)
 on Linux, macOS and Windows; snapshot updates are reviewed diffs

@@ -3,6 +3,12 @@
 Thanks for your interest! This document covers everything you need to get a
 change from your editor into `main`.
 
+## Where to start
+
+- New to the project? Start with the [good first issue](https://github.com/vyncint/temlens/labels/good%20first%20issue)label.
+- Draft PRs are welcome early - opening one can help confirm direction before you do too much work.
+- Two things that commonly trip contributors up: use `git commit -s` for the DCO , and review snapshot changes with `cargo insta review` rather than blindly accepting them.
+
 > **These four projects share one contributor pattern** — the same commit
 > rules, the same DCO, the same AI policy, the same CI and release shape:
 > [termlens](https://github.com/vyncint/termlens),
