@@ -23,7 +23,7 @@ fn a_failed_wait_writes_its_screen_to_the_artifact_dir() -> termlens::Result<()>
     let err = t
         .wait_until_for(|s| s.contains("never"), Duration::from_millis(100))
         .expect_err("the wait must time out");
-    assert!(matches!(err, termlens::Error::Timeout { .. }),"{err:?}");
+    assert!(matches!(err, termlens::Error::Timeout { .. }), "{err:?}");
 
     let mut files: Vec<_> = std::fs::read_dir(&dir)?
         .map(|e| e.expect("a directory entry").path())
@@ -50,7 +50,7 @@ fn a_failed_wait_writes_its_screen_to_the_artifact_dir() -> termlens::Result<()>
         Screen::parse(&body)?
     };
     let diff = saved.diff(err.screen().unwrap());
-    assert!(diff.is_empty(),"{diff}");
+    assert!(diff.is_empty(), "{diff}");
     assert!(saved.cell(0, 0).unwrap().style().bold, "styles come along");
 
     std::env::remove_var("TERMLENS_ARTIFACT_DIR");

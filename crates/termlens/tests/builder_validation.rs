@@ -262,8 +262,8 @@ fn resize_after_the_child_exits_is_refused_like_send() -> termlens::Result<()> {
         "a refused resize must not move the snapshot"
     );
     // A size that cannot work is still the size error, and is checked first.
-    let resized = t.resize(0,10);
-    assert!(matches!(resized, Err(Error::Size(_))),"{resized:?}");
+    let resized = t.resize(0, 10);
+    assert!(matches!(resized, Err(Error::Size(_))), "{resized:?}");
     Ok(())
 }
 

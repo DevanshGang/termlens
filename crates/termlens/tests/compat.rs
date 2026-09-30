@@ -120,7 +120,7 @@ fn a_hand_edited_corpus_file_would_fail() {
     // it goes.
     let truncated = text.replacen("styles:", "style:", 1);
     let parsed = Screen::parse(&truncated);
-    assert!(parsed.is_err(),"{parsed:?}");
+    assert!(parsed.is_err(), "{parsed:?}");
 }
 
 #[cfg(feature = "serde")]
