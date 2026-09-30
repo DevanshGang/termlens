@@ -233,7 +233,7 @@ fn inspect_prints_its_usage_for_help_and_for_a_missing_program() {
         Some(2),
         "no program is still a usage error"
     );
-    assert!(none.stdout.is_empty());
+    assert!(none.stdout.is_empty(),"{:?}",none.stdout);
     assert!(
         String::from_utf8_lossy(&none.stderr).starts_with("usage: inspect"),
         "the same usage goes to stderr:\n{}",

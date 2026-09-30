@@ -119,7 +119,8 @@ fn a_hand_edited_corpus_file_would_fail() {
     // An edit that breaks the format is refused rather than read as far as
     // it goes.
     let truncated = text.replacen("styles:", "style:", 1);
-    assert!(Screen::parse(&truncated).is_err());
+    let parsed = Screen::parse(&truncated);
+    assert!(parsed.is_err(),"{parsed:?}");
 }
 
 #[cfg(feature = "serde")]
